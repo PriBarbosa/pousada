@@ -11,6 +11,7 @@
 
  p {
     color: whitesmoke;
+    font-style: oblique;
 
  }
 
@@ -29,5 +30,9 @@
     color: whitesmoke;
     font-weight: bolder;
  }
- 
- 
+
+ footer {
+    color: darkgreen;
+    font-size: larger;
+
+ }
