@@ -1,0 +1,25 @@
+body {
+    color: goldenrod;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+}
+
+nav {
+    color: green;
+    font-size: larger;
+}
+
+.table {
+
+
+    border: 0cqw;
+    padding: 1cqmin;
+    text-align: left;
+    border: 12px solid rgb(red, green, blue);
+}
+
+li {
+    color: black;
+    font-weight: 300;
+
+}
