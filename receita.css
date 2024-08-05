@@ -9,13 +9,13 @@ nav {
     font-size: larger;
 }
 
-.table {
+table {
+    border-collapse: collapse;
+}
 
-
-    border: 0cqw;
-    padding: 1cqmin;
-    text-align: left;
-    border: 12px solid rgb(red, green, blue);
+th,
+td {
+    border: 1px solid black;
 }
 
 li {
