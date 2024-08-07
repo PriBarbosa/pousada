@@ -10,13 +10,16 @@
  }
 
  p {
-    color: whitesmoke; text-align: center;
+   animation-duration: inherit;
+    color: whitesmoke;
+    text-align: center;
     font-style: oblique;
 
  }
 
  h1 {
-    color: green; text-align: center;
+    color: green;
+    text-align: center;
     font-style: italic;
  }
 
@@ -32,7 +35,7 @@
  }
 
  footer {
-    color: darkgreen; 
+    color: darkgreen;
     font-size: larger;
     text-align: center;
 

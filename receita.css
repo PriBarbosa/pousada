@@ -10,7 +10,9 @@ nav {
     font-size: larger;
 }
 
+
 h1 {
+    animation-duration: 3s;
     color: purple;
     text-align: center;
     font: bolder;
