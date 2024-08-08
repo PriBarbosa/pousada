@@ -36,7 +36,9 @@ td {
     border: 1px solid rgb(185, 216, 13);
     padding: 1px;
 }
-
+ol{
+    animation-fill-mode: backwards;
+}
 li {
     color: rgb(212, 6, 6);
     font-style: italic;
