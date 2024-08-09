@@ -33,8 +33,6 @@ table {
     border-collapse: collapse;
 
 
-
-
 }
 
 th,
@@ -42,7 +40,11 @@ td {
     border: 5px solid rgb(185, 216, 13);
     padding: 5px;
 }
+div{
+    text-align: center;
+    
 
+}
 li {
     color: rgb(212, 6, 6);
     font-style: italic;
