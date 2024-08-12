@@ -1,5 +1,6 @@
  body {
-    background-color: black;
+    background-color: whitesmoke color: bisque;
+    font-weight: 100;
  }
 
  nav {
@@ -10,9 +11,8 @@
  }
 
  p {
-   animation-duration: inherit;
-    color: whitesmoke;
-    text-align: center;
+    animation-duration: inherit;
+    color: rgb(from color r g b) text-align: center;
     font-style: oblique;
 
  }
