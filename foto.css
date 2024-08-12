@@ -1,0 +1,27 @@
+body {
+    background-color: wheat;
+    color: black;
+    font-weight: bold;
+    text-align: justify;
+}
+
+h1 {
+    color: yellow;
+    font-size: larger;
+    text-align: center;
+    background-color: black;
+}
+
+h2 {
+    color: purple;
+    font-size: larger;
+    text-align: center;
+    background-color: black;
+}
+
+footer {
+    color: black;
+    font-size: small;
+    text-align: center;
+    background-color: antiquewhite;
+}

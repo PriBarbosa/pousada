@@ -1,5 +1,5 @@
  body {
-    background-color: whitesmoke color: bisque;
+    background-color: wheat;
     font-weight: 100;
  }
 
@@ -12,8 +12,7 @@
 
  p {
     animation-duration: inherit;
-    color: rgb(from color r g b) text-align: center;
-    font-style: oblique;
+    font-style: blique;
 
  }
 
@@ -24,13 +23,14 @@
  }
 
  h2 {
-    color: whitesmoke;
+    color: yellowgreen;
     font-weight: bolder;
+    text-align: center;
 
  }
 
  h3 {
-    color: whitesmoke;
+    color: palevioletred;
     font-weight: bolder;
  }
 
@@ -39,4 +39,9 @@
     font-size: larger;
     text-align: center;
 
+ }
+
+ main {
+    text-decoration: whitesmoke;
+    font-size: larger;
  }
