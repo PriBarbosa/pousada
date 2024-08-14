@@ -1,9 +1,25 @@
-head {
-    background-color: aqua;
+body {
+    background-color: greenyellow;
     font-size: larger;
-    width: 900;
-    height: 350;
+    color: black;
+}
+
+h1 {
+    font-size: larger;
+    color: rgb(from color r g b);
     text-align: center;
+}
 
+table {
+    table-layout: inherit;
+    border-collapse: collapse;
+    font-style: oblique;
 
+}
+
+th,
+td {
+    border: 6px solid black;
+    padding: 6px;
+    font-weight: 100;
 }

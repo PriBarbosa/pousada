@@ -16,7 +16,7 @@ nav {
 h1 {
     animation-duration: 3s;
     color: purple;
-    text-align: center;
+    text-align: justify;
     font: bolder;
     color: 523;
     height: 350;
@@ -38,7 +38,7 @@ table {
 th,
 td {
     border: 5px solid rgb(185, 216, 13);
-    padding: 5px;
+    padding: 9px;
 }
 div{
     text-align: center;
