@@ -9,7 +9,11 @@ h1 {
     color: rgb(from color r g b);
     text-align: center;
 }
-
+.fotos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 table {
     table-layout: inherit;
     border-collapse: collapse;
