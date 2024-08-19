@@ -6,13 +6,15 @@
  nav {
     color: yellowgreen;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: none;
+    text-align: initial;
+    
 
  }
 
  p {
-    animation-duration: inherit;
-    font-style: blique;
+   color: green;
+   font-size: medium;
+   text-align: justify;
 
  }
 
@@ -44,4 +46,5 @@
  main {
     text-decoration: whitesmoke;
     font-size: larger;
- }
+    
+}

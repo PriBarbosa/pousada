@@ -1,0 +1,13 @@
+body {
+    background-image: url(Imagens/Por\ do\ sol\ igreja.jpg); background-repeat: repeat, repeat; 
+    background-attachment: fixed;
+    background-blend-mode: luminosity;
+    height: 1000px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+    color: black;
+}
