@@ -1,16 +1,16 @@
  body {
-    background-color: wheat;
+    background-color: black;
     font-weight: 100;
  }
 
  nav {
     color: yellowgreen;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: initial;
+    font-size: medium;
+    text-align: end;
     display: flex;
     justify-content: space-evenly;
     color: black;
-   
+
 
  }
 
@@ -47,13 +47,25 @@
  }
 
  main {
-    text-align:end;
+    text-align: end;
     font-size: larger;
+    align-content: center;
+
 
  }
 
- .principal {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+ .primaria {
+    color: green;
+    font-style: italic;
+    text-align: justify;
+    display: block;
+
+
+ }
+
+ image {
+    text-align: end;
+    inset-block-start: inherit;
+    width: 500px;
+    height: 300px;
  }
