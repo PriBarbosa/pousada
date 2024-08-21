@@ -7,14 +7,17 @@
     color: yellowgreen;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: initial;
-    
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+   
 
  }
 
  p {
-   color: green;
-   font-size: medium;
-   text-align: justify;
+    color: green;
+    font-size: medium;
+    text-align: justify;
 
  }
 
@@ -44,8 +47,13 @@
  }
 
  main {
-    text-decoration: whitesmoke;
+    text-align:end;
     font-size: larger;
-    
-}
 
+ }
+
+ .principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
