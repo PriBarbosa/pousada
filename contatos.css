@@ -1,9 +1,8 @@
 body {
-    background-image: url(Imagens/Por\ do\ sol\ igreja.jpg); background-repeat: repeat, repeat; 
-    background-attachment: fixed;
-    background-blend-mode: luminosity;
-    height: 1000px;
-    width: 100%;
+    background-image: url(Imagens/Por\ do\ sol\ igreja.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
 }
 
 h1 {

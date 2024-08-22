@@ -49,8 +49,6 @@
  main {
     text-align: end;
     font-size: larger;
-    align-content: center;
-
 
  }
 
@@ -58,7 +56,7 @@
     color: green;
     font-style: italic;
     text-align: justify;
-    display:contents;
+
    
 
 
