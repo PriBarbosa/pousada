@@ -58,14 +58,8 @@
     color: green;
     font-style: italic;
     text-align: justify;
-    display: block;
+    display:contents;
+   
 
 
- }
-
- image {
-    text-align: end;
-    inset-block-start: inherit;
-    width: 500px;
-    height: 300px;
  }
