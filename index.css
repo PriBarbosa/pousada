@@ -3,11 +3,11 @@
     font-weight: 100;
  }
 
- nav {
+ .menu {
     color: yellowgreen;
     font-size: medium;
-    text-align: end;
-    display: flex;
+    text-align: center;
+    display: flex;contain: content;
     justify-content: space-evenly;
     color: black;
 
@@ -16,8 +16,8 @@
 
  p {
     color: green;
-    font-size: medium;
-    text-align: justify;
+    font-size:large;
+    text-align:center;
 
  }
 
@@ -61,3 +61,18 @@
 
 
  }
+ .somos{
+   display: flex;
+   justify-content: space-around;
+ }
+ .somos p{
+   width: 50%;
+ }
+ .chales{
+   display: flex;
+   
+
+ }
+.chales p{
+   width: 50%;
+}
