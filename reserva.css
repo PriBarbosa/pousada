@@ -1,0 +1,11 @@
+.reserva {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px;
+}
+
+.inicio,
+.card {
+    width: 33%;
+}

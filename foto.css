@@ -5,23 +5,31 @@ body {
     text-align: justify;
 }
 
-h1 {
+.principal {
     color: yellow;
     font-size: larger;
     text-align: center;
-    background-color: black;
+
 }
 
-h2 {
-    color: purple;
+.principal p {
+    color: green;
     font-size: larger;
     text-align: center;
-    background-color: black;
+
+}
+
+.principal h1 {
+    font-size: large;
+    text-align: center;
+}
+.segundaria p{
+    
+
 }
 
 footer {
     color: black;
     font-size: small;
     text-align: center;
-    background-color: antiquewhite;
 }
