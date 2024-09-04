@@ -85,3 +85,10 @@
     text-align: center;
     color: black;
  }
+ .dicas{
+   display: flex;
+    justify-content: space-between;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+ 
