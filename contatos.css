@@ -5,3 +5,9 @@ h1 {
     font-style: italic;
     color: black;
 }
+body{
+    background-image: url(Imagens/Por\ do\ sol\ igreja.jpg );
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}

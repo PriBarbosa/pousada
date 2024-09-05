@@ -9,3 +9,11 @@
 .card {
     width: 33%;
 }
+.inicio p{
+    text-align: end;
+    font-style: oblique;
+    color: purple;
+    text-align: center;
+}
+
+    
