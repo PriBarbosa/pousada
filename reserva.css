@@ -1,9 +1,13 @@
 .reserva {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 100px;
-}
+    display:flex;
+    margin: 50px;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content:space-around;
+    box-sizing: border-box;
+    
+     }
 
 .inicio,
 .card {
@@ -16,4 +20,9 @@
     text-align: center;
 }
 
-    
+    body{
+        background-image: url(Imagens/Por\ do\ sol\ igreja.jpg );
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }

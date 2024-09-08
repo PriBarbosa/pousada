@@ -1,13 +1,21 @@
-
-
 h1 {
     text-align: center;
     font-style: italic;
     color: black;
 }
-body{
+
+body {
     background-image: url(Imagens/Por\ do\ sol\ igreja.jpg );
     background-size: cover;
     background-position: center;
     height: 100vh;
+}
+
+img {
+    vertical-align: middle;
+    width: 10%;
+    height: auto;
+    display: flex;
+    
+
 }
