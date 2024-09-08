@@ -1,7 +1,7 @@
 body {
     background-color: wheat;
     color: black;
-    font-weight: bold;
+    font-style: italic;
     text-align: justify;
 }
 
@@ -38,4 +38,8 @@ footer {
     color: black;
     font-size: small;
     text-align: center;
+}
+.carousel-item{
+    display: flex;
+    
 }
