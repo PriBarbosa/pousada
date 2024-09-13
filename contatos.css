@@ -12,8 +12,8 @@ body {
 }
 
 img {
-    vertical-align: middle;
-    width: 10%;
+    vertical-align:text-top;
+    width: 5%;
     height: auto;
     display: flex;
     

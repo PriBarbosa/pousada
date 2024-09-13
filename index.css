@@ -1,12 +1,20 @@
- h1 {
-   color: greenyellow;
-    font-style: italic;
-    text-align: center;
+
+ .titulo{
+   display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
  }
 
+
+
+
+
  .menu {
-    color: yellowgreen;
-    font-style: italic;
+    color: midnightblue;
+    font-style:oblique;
     text-align: center;
     display: flex;
     contain: content;
@@ -24,7 +32,7 @@
  }
 
  .primaria h1 {
-    color: greenyellow;
+    color:mediumblue;
     font-style: italic;
     text-align: center;
  }
@@ -37,7 +45,7 @@
 
  .somos p {
     font-style: italic;
-    color: black;
+    color:black;
     text-align: center;
  }
 
@@ -57,7 +65,7 @@
  .segundaria h1 {
     display: flex;
     justify-content: space-around;
-    color: greenyellow;
+    color:mediumblue;
  }
 
  .segundaria p {
@@ -73,9 +81,9 @@
  .dicas h1 {
     display: flex;
     justify-content: space-around;
-    font-style: italic;
-    text-align: center;
-    color: greenyellow;
+    font-style:italic;
+    text-align:center;
+    color: mediumblue;
  }
 
  .dicas p {
@@ -90,5 +98,11 @@
     justify-content: space-between;
     align-content: stretch;
     flex-wrap: wrap;
+    text-align: center;
 }
- 
+
+footer{
+   text-align: center;
+   font-style: italic;
+   color: mediumblue;
+}
