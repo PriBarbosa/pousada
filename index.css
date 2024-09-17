@@ -1,107 +1,116 @@
-
- .titulo{
+.titulo {
    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-content: center;
-    flex-wrap: nowrap;
-    align-items: center;
- }
-
-
-
-
-
- .menu {
-    color: midnightblue;
-    font-style:oblique;
-    text-align: center;
-    display: flex;
-    contain: content;
-    justify-content: space-evenly;
-
- }
-
-
- .primaria {
-    color: black;
-    font-style: italic;
-    text-align: center;
-
-
- }
-
- .primaria h1 {
-    color:mediumblue;
-    font-style: italic;
-    text-align: center;
- }
-
- .somos {
-
-    display: flex;
-    justify-content: space-around;
- }
-
- .somos p {
-    font-style: italic;
-    color:black;
-    text-align: center;
- }
-
- .chales {
-    display: flex;
-    justify-content: space-around;
-    font-style: italic;
-
- }
-
- .chales p {
-    font-style: italic;
-    color: black;
-    text-align: center;
- }
-
- .segundaria h1 {
-    display: flex;
-    justify-content: space-around;
-    color:mediumblue;
- }
-
- .segundaria p {
-    display: flex;
-    justify-content: space-around;
-    font-style: italic;
-    text-align: center;
-    color: black;
-
-
- }
-
- .dicas h1 {
-    display: flex;
-    justify-content: space-around;
-    font-style:italic;
-    text-align:center;
-    color: mediumblue;
- }
-
- .dicas p {
-    display: flex;
-    justify-content: space-around;
-    font-style: italic;
-    text-align: center;
-    color: black;
- }
- .dicas{
-   display: flex;
-    justify-content: space-between;
-    align-content: stretch;
-    flex-wrap: wrap;
-    text-align: center;
+   flex-direction: row-reverse;
+   justify-content: space-around;
+   align-content: center;
+   flex-wrap: nowrap;
+   align-items: center;
 }
 
-footer{
+.titulo h1 {
+   font-style: oblique;
+   color: mediumblue;
+   text-align: center;
+
+}
+
+
+
+
+.menu {
+   color: midnightblue;
+   font-style: oblique;
+   text-align: center;
+   display: flex;
+   contain: content;
+   justify-content: space-evenly;
+
+}
+
+
+.primaria {
+   color: blue;
+   font-style: italic;
+   text-align: center;
+
+
+}
+
+.primaria h1 {
+   color: mediumblue;
+   font-style: italic;
+   text-align: center;
+}
+
+.somos {
+
+   display: flex;
+   justify-content: space-around;
+}
+
+.somos p {
+   font-style: italic;
+   color: black;
+   text-align: center;
+}
+
+.chales {
+   display: flex;
+   justify-content: space-around;
+   font-style: italic;
+
+}
+
+.chales p {
+   font-style: italic;
+   color: black;
+   text-align: center;
+}
+
+.segundaria h1 {
+   display: flex;
+   justify-content: space-around;
+   color: mediumblue;
+}
+
+.segundaria p {
+   display: flex;
+   justify-content: space-around;
+   font-style: italic;
+   text-align: center;
+   color: black;
+
+
+}
+
+.dicas h1 {
+   display: flex;
+   justify-content: space-around;
+   font-style: italic;
+   text-align: center;
+   color: mediumblue;
+}
+
+.dicas p {
+   display: flex;
+   justify-content: space-around;
+   font-style: italic;
+   text-align: center;
+   color: black;
+}
+
+.dicas {
+
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   text-align: center;
+   align-content: flex-start;
+   align-items: flex-start;
+   flex-direction: row-reverse;
+}
+
+footer {
    text-align: center;
    font-style: italic;
    color: mediumblue;
