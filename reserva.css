@@ -1,28 +1,40 @@
 .reserva {
-    display:flex;
+    display: flex;
     margin: 50px;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
     align-content: flex-start;
-    justify-content:space-around;
+    justify-content: space-around;
     box-sizing: border-box;
-    
-     }
+
+}
 
 .inicio,
 .card {
     width: 33%;
 }
-.inicio p{
+
+.inicio p {
     text-align: end;
     font-style: oblique;
     color: black;
     text-align: center;
 }
 
-    body{
-        background-image: url(Imagens/Por\ do\ sol\ igreja.jpg );
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
+body {
+    /*   background-image: url(Imagens/Por\ do\ sol\ igreja.jpg );*/
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: red !important;
+
     }
+
+    .reserva {
+        flex-direction: column;
+    }
+}
