@@ -1,23 +1,58 @@
-h1 {
-    text-align: center;
-    font-size: larger; 
-    font-style: italic;
-    color: black;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-image: url(Imagens/Por\ do\ sol\ igreja.jpg );
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
-
-img {
-    vertical-align:text-top;
-    width: 5%;
-    height: auto;
+    height:  100vh;
+    background-color: hsl(177, 84%, 42%);
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-content:center;
     
-    
+}
+.titulo{
+    text-align: end;
+    font-style: italic;
+   display: flex;
+   align-items: end;
+}
+
+.menu{
+    position:relative;
+    height: 35px;
+    width: 500px;
+    background-color: white;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.menu ul li{
+    position: relative;
+    list-style-type: none;
+}
+.menu ul li a{
+    position: relative;
+    height: 120px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.menu ul li a{
+    color: rgb(16, 17, 17);
+    font-size: 38px;
 
 }
+
