@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: hsl(186, 66%, 51%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu{
+    position: relative;
+    height: 80px;
+    width: 500px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu ul{
+    position: relative;
+    display: flex;
+}
+.menu ul li{
+    position: relative;
+    list-style-type: none;
+}
+.menu ul li a{
+    position: relative;
+    height: 120px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.menu ul li a{
+    color: aqua;
+    font-size: 38px;
+}
