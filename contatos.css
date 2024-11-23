@@ -6,28 +6,23 @@
 
 body {
     height:  100vh;
-    background-color: hsl(177, 84%, 42%);
-    display: flex;
+    background-color: hsl(204.37deg 66.55% 44.81%);
     align-items: center;
     justify-content: center;
     flex-direction:row;
     flex-wrap: wrap;
-    align-content:center;
+    display: grid;
+    align-content: space-around;
     
 }
-.titulo{
-    text-align: end;
-    font-style: italic;
-   display: flex;
-   align-items: end;
-}
+
 
 .menu{
     position:relative;
     height: 35px;
     width: 500px;
     background-color: white;
-    border-radius: 45px;
+    border-radius: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,5 +49,9 @@ body {
     color: rgb(16, 17, 17);
     font-size: 38px;
 
+}
+img{
+    width: fit-content;
+    height: 350px;
 }
 
