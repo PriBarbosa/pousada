@@ -5,15 +5,12 @@
 }
 
 body {
-    height: 100vh;
+    height: 25vh;
     background-color: hsl(204.37deg 66.55% 44.81%);
-    align-items: baseline;
-    justify-content: baseline;
-    flex-direction: row;
-    flex-wrap: wrap;
-    display:flex;
-    align-content: space-around;
-
+    display: grid;
+    align-content:space-around;
+    justify-content:space-around;
+    justify-items: stretch;
 }
 
 
