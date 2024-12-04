@@ -1,16 +1,40 @@
-*{
+* {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-size:medium;
+   font-size: medium;
 }
-.contanier{
+body{
+   background-color: hsla(203, 19%, 87%, 0.897) !important;
+}
+
+.contanier {
    max-width: 1800px;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
 }
-header{
-   background: color #000;
+
+header {
+   background-color: rgba(2, 102, 19, 0.938);
+   width: 100%;
+   padding: 10px;
+}
+
+.logo,
+.socias {
+   width: 25%;
+}
+
+.logo img {
+   width: 150px;
+   border-radius: 9px;
 
 }
+
 
 .titulo {
    display: flex;
@@ -28,19 +52,30 @@ header{
 
 }
 
-
-
-
-.menu {
-   color: midnightblue;
-   font-style: oblique;
-   text-align: center;
-   display: flex;
-   contain: content;
-   justify-content: space-evenly;
-
+.socias button {
+   width: 45px;
+   height: 45px;
+   background-image: linear-gradient(45deg, #0b1b77, #0b17b966);
+   border-radius: 8px;
+   cursor: pointer;
+   border: none;
+   margin-right: 10px;
 }
 
+.socias button i {
+   font-size: 20px;
+   color: #ffffff;
+}
+
+.menu {
+   width: 50%;
+}
+
+.menu nav a {
+   color: #ffffff;
+   text-decoration: none;
+   padding: 40px;
+}
 
 .primaria {
    color: blue;
@@ -133,8 +168,8 @@ footer {
 
 @media (max-width: 600px) {
    body {
-       background-color: red !important;
-       margin: 10px !important;
+      background-color: red !important;
+      margin: 10px !important;
    }
 
 }
