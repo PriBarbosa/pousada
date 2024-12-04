@@ -4,7 +4,8 @@
    box-sizing: border-box;
    font-size: medium;
 }
-body{
+
+body {
    background-color: hsla(203, 19%, 87%, 0.897) !important;
 }
 
@@ -15,7 +16,7 @@ body{
    display: flex;
    justify-content: center;
    align-items: center;
-   
+
 }
 
 header {

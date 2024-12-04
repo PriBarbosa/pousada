@@ -5,12 +5,8 @@
 }
 
 body {
-    height: 10px;;
-    background-color:#ffffff;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
+
+    background-color: hsla(203, 19%, 87%, 0.897) !important;
 }
 
 
@@ -60,8 +56,17 @@ header {
     width: 50%;
 }
 
+.menu nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 40px;
+}
 
+section{
+    background-color: #727cb6ec;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
+}
 iframe {
     width: 150px;
     height: 150px;
