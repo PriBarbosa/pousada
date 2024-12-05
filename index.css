@@ -2,8 +2,13 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-size: medium;
+   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+html {
+   scroll-behavior: smooth;
+}
+
 
 body {
    background-color: hsla(203, 19%, 87%, 0.897) !important;
@@ -22,9 +27,26 @@ body {
 header {
    background-color: rgba(2, 102, 19, 0.938);
    width: 100%;
+   height: 120px;
    padding: 10px;
+   position: fixed;
 }
 
+.aside {
+   padding-top: 120px;
+   display: flex;
+}
+
+.aside aside {
+   border: 5px solid #0b17b966;
+   display: flex;
+   flex-direction: column;
+   width: 500px;
+}
+ .aside aside h1{
+   font-variant: normal;
+   color: #0b1b77;
+ }
 .logo,
 .socias {
    width: 25%;
@@ -44,6 +66,7 @@ header {
    align-content: center;
    flex-wrap: nowrap;
    align-items: center;
+
 }
 
 .titulo h1 {

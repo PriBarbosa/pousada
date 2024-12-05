@@ -17,8 +17,9 @@
     <header>
         <div>
             <div class="contanier">
-                <div class="logo"><img src="Imagens/logo-Sitio-olho-d-agua.jpg" width="110" height="95">
-                </div>
+                <a class="logo" href="index.html">
+                    <img src="Imagens/logo-Sitio-olho-d-agua.jpg" width="110" height="95">
+                </a>
                 <div class="menu">
                     <nav>
                         <a href="foto.html">Nossas Acomodações</a>
@@ -57,13 +58,16 @@
         <h2>Faça um orçamento</h2>
         <label for="data">Escolha uma data
         </label>
-        <input type="date" name="data" id="dataDisponivel">
-        <input type="submit" value="ok">
+        <input type="date" name="data" id="checkin">
+        <input type="date" name="data" id="checkout">
+        <!-- <input type="submit" value="ok"> -->
     </form>
+    <button onclick="calcularDiaria()">ok</button>
     <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3706.8127792457963!2d-44.9477911255617!3d-21.70999399619634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9fd0f2d067548f%3A0x108008fb91a46a95!2sSitio%20Olho%20D&#39;agua!5e0!3m2!1spt-BR!2sbr!4v1722458686084!5m2!1spt-BR!2sbr"
         width="120" height="120" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">Localização</ifram>
+        referrerpolicy="no-referrer-when-downgrade">Localização</iframe>
+    <script src="contatos.js"></script>
 </body>
 
 </html>
