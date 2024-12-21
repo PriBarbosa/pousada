@@ -4,17 +4,34 @@ function calcularDiaria() {
     console.log(checkin.value)
     var checkout = document.getElementById('checkout')
     console.log(checkout.value)
+    calcularDiaria
 
-    // descobrir os dias
-    var dias = 0
+    var date1 = new Date(checkin.value);
+    var date2 = new Date(checkout.value);
+    console.log(date1, '****', date2)
+    var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+    var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+    // alert(diffDays);
 
 
 
-    // multiplicar valores por diarias
-    var diaria = 100
-    var resultado = dias * diaria
-    console.log(resultado)
+    var diaria = 190
+    var resultado = diffDays * diaria
 
+
+    if (diffDays >= 2) {
+        console.log('ok')
+    }
+
+    else if (diffDays <= 2)
+        console.log('erro')
+
+    // let resultado = document.createElement('resultado')
+    // document.body.appendChild(resultado)
+    console.log('resultado =', resultado)
+
+ var p = document.createElement = (p)
+ 
 
     // exibir resultado na tela
     document.appendChild
@@ -22,5 +39,4 @@ function calcularDiaria() {
 
 
 }
-
 

@@ -7,6 +7,7 @@
 body {
 
     background-color: hsla(203, 19%, 87%, 0.897) !important;
+
 }
 
 
@@ -14,6 +15,12 @@ header {
     background-color: rgba(2, 102, 19, 0.938);
     width: 100%;
     padding: 5px;
+}
+
+div form .action{
+    display: flex;
+    flex-direction:column;
+
 }
 
 .contanier {
@@ -62,14 +69,26 @@ header {
     padding: 40px;
 }
 
-section{
-    background-color: #727cb6ec;
+section {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction:column;
+    align-items:start;
 
 }
+
 iframe {
-    width: 150px;
-    height: 150px;
-    text-align:center;
-    
+    width: 350px;
+    height: 350px;
+    text-align: center;
+
+
 }
+
+footer {
+    border: 1px solid #0a0229;
+    text-align: center;
+    font-style: italic;
+    color: rgb(19, 3, 56);
+ }
+ 
