@@ -15,7 +15,9 @@ body {
 header {
     background-color: rgba(2, 102, 19, 0.938);
     width: 100%;
+    height: 120px;
     padding: 10px;
+
 }
 
 .contanier {
@@ -86,6 +88,7 @@ header {
     color: yellow;
     font-size: larger;
     text-align: center;
+   
 
 }
 
@@ -114,19 +117,23 @@ header {
 }
 
 footer {
-    color: black;
-    font-size: small;
+    border: 2px solid #897589;
     text-align: center;
+    font-style: italic;
+    color: mediumblue;
+    position: relative;
+
 }
 
 .carousel-item {
     display: flex;
+    flex-direction: column;
 
 }
 
 img .classe d-block w-100 {
     width: 75%;
-    height:175px;
-    
+    height: 175px;
+
 
 }
