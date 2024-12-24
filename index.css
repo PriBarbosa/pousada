@@ -187,16 +187,19 @@ header {
    flex-direction: row-reverse;
 }
 
- img {
+img {
    width: 120px;
    height: 120px;
 }
 
 footer {
-   border: 6px solid #897589;
+   border: 2px solid #897589;
    text-align: center;
    font-style: italic;
    color: mediumblue;
+   position:relative;
+
+
 }
 
 

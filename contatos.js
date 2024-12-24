@@ -17,7 +17,7 @@ function calcularDiaria() {
 
     var diaria = 190
     var resultado = diffDays * diaria
-
+   
 
     if (diffDays >= 2) {
         console.log('ok')
@@ -26,12 +26,13 @@ function calcularDiaria() {
     else if (diffDays <= 2)
         console.log('erro')
 
-    // let resultado = document.createElement('resultado')
-    // document.body.appendChild(resultado)
+
     console.log('resultado =', resultado)
 
- var p = document.createElement = (p)
+
  
+
+
 
     // exibir resultado na tela
     document.appendChild

@@ -86,9 +86,11 @@ iframe {
 }
 
 footer {
-    border: 1px solid #0a0229;
+    border: 2px solid #897589;
     text-align: center;
     font-style: italic;
-    color: rgb(19, 3, 56);
+    color: mediumblue;
+    position: relative;
+
  }
  
