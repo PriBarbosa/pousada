@@ -1,38 +1,42 @@
+/* Estilo Global */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* Estilo para o corpo */
 body {
-
     background-color: hsla(203, 19%, 87%, 0.897) !important;
-
 }
 
-
+/* Cabeçalho */
 header {
     background-color: rgba(2, 102, 19, 0.938);
     width: 100%;
-    padding: 5px;
+    height: 130px;
+    padding: 20px;
+    position: fixed;
+
 }
 
-div form .action{
+/* Formulários e Ações */
+div form .action {
     display: flex;
-    flex-direction:column;
-
+    flex-direction: column;
 }
 
+/* Container principal */
 .contanier {
     max-width: 1800px;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
+/* Logo */
 .logo,
 .socias {
     width: 25%;
@@ -41,9 +45,9 @@ div form .action{
 .logo img {
     width: 150px;
     border-radius: 9px;
-
 }
 
+/* Botões de redes sociais */
 .socias button {
     width: 45px;
     height: 45px;
@@ -59,6 +63,7 @@ div form .action{
     color: #ffffff;
 }
 
+/* Navegação */
 .menu {
     width: 50%;
 }
@@ -69,28 +74,43 @@ div form .action{
     padding: 40px;
 }
 
+/* Seções principais */
 section {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
-    flex-direction:column;
-    align-items:start;
-
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    padding: 130px;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
+/* Estilo para o iframe */
 iframe {
     width: 350px;
     height: 350px;
     text-align: center;
-
-
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-top: 10px;
 }
 
+/* Rodapé */
 footer {
-    border: 2px solid #897589;
+
     text-align: center;
     font-style: italic;
     color: mediumblue;
     position: relative;
+    padding: 10px;
+    background-color: #f5f5f5;
+    margin-top: 20px;
+}
 
- }
- 
+/* Responsividade */
+@media (max-width: 600px) {
+    body {
+        background-color: red !important;
+        margin: 10px !important;
+    }
+}

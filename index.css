@@ -2,7 +2,7 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-style: italic;
 }
 
 html {
@@ -38,7 +38,7 @@ header {
 }
 
 .aside aside {
-   border: 5px solid #0b17b966;
+
    display: flex;
    flex-direction: column;
    width: 500px;
@@ -64,7 +64,7 @@ header {
 
 .titulo {
    display: flex;
-   flex-direction: row-reverse;
+   flex-direction:column;
    justify-content: space-around;
    align-content: center;
    flex-wrap: nowrap;
@@ -193,11 +193,11 @@ img {
 }
 
 footer {
-   border: 2px solid #897589;
+
    text-align: center;
    font-style: italic;
    color: mediumblue;
-   position:relative;
+   position: relative;
 
 
 }

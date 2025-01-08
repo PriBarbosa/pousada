@@ -1,43 +1,49 @@
 
 function calcularDiaria() {
-    var checkin = document.getElementById('checkin')
-    console.log(checkin.value)
-    var checkout = document.getElementById('checkout')
-    console.log(checkout.value)
-    calcularDiaria
+    // Obtém os elementos de entrada para check-in e check-out
+    var checkin = document.getElementById('checkin');
+    var checkout = document.getElementById('checkout');
+    var resultadoDiv = document.getElementById('resultado');
 
-    var date1 = new Date(checkin.value);
-    var date2 = new Date(checkout.value);
-    console.log(date1, '****', date2)
-    var timeDiff = Math.abs(date2.getTime() - date1.getTime());
-    var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
-    // alert(diffDays);
+    // Limpa a mensagem anterior
+    resultadoDiv.textContent = "";
 
-
-
-    var diaria = 190
-    var resultado = diffDays * diaria
-   
-
-    if (diffDays >= 2) {
-        console.log('ok')
+    // Verifica se os campos têm valores válidos
+    if (!checkin.value || !checkout.value) {
+        resultadoDiv.textContent = "Por favor, preencha as datas de check-in e check-out.";
+        resultadoDiv.style.color = "red";
+        return;
     }
 
-    else if (diffDays <= 2)
-        console.log('erro')
+    // Converte as datas em objetos Date
+    var date1 = new Date(checkin.value);
+    var date2 = new Date(checkout.value);
 
+    // Verifica se a data de check-out é anterior à de check-in
+    if (date2 <= date1) {
+        resultadoDiv.textContent = "A data de check-out deve ser posterior à data de check-in.";
+        resultadoDiv.style.color = "red";
+        return;
+    }
 
-    console.log('resultado =', resultado)
+    // Calcula a diferença em dias
+    var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+    var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
 
+    // Verifica se o número de diárias é maior ou igual a 2
+    if (diffDays >= 2) {
+        // Calcula o valor total com base na diária
+        var diaria = 190;
+        var resultado = diffDays * diaria;
 
- 
+        // Exibe o resultado na div
+        resultadoDiv.textContent = `Total de diárias: ${diffDays}, Valor total: R$ ${resultado.toFixed(2)}`;
+        resultadoDiv.style.color = "blue";
+    } else {
+        resultadoDiv.textContent = "A estadia mínima é de 2 diárias.";
+        resultadoDiv.style.color = "red";
+    }
 
-
-
-    // exibir resultado na tela
-    document.appendChild
-
-
-
+    // Exibe o resultado no console
+    console.log("Resultado =", diffDays >= 2 ? resultado : "Estadia mínima não atendida");
 }
-

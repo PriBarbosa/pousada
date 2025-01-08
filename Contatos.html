@@ -48,44 +48,35 @@
 
         </div>
     </header>
-    <div class="contanier">
+    <div class="container">
         <section>
-            <h1 class="titulo">Para informações entar em contato via nossos canais de atendimento</h1>
-            <div class="Chalé Amarelo">
-
-                <h2>Já marque a data da sua próxima viagem para São Thomé</h2>
+            <h1 class="titulo">Entre em contato pelos nossos canais de atendimento</h1>
+            <div class="chale amarelo">
+                <h2>Já marcou a data da sua próxima viagem para São Thomé?</h2>
                 <div class="simulador">
                     <label for="data">Faça um orçamento Chalé Ipé Amarelo</label><br>
-                    <img src="Fotos chalé/Chalé Ipe Amarelo.jpg" alt="" height="150" width="275"><br>
+                    <img src="Fotos chalé/Chalé Ipe Amarelo.jpg" alt="Chalé Ipé Amarelo" height="150" width="275"><br>
                     <input type="date" name="data" id="checkin">
                     <input type="date" name="data" id="checkout">
-                    <button onclick="calcularDiaria()">Enviar</button>
+                    <button onclick="calcularDiaria()">Calcular</button>
+                    <!-- Elemento para exibir o resultado -->
+                    <div id="resultado" style="margin-top: 10px; font-weight: bold; color: blue;"></div>
                 </div>
 
-                <div class="Chalé Quaresmeira">
-                    <h2>Já marque a data da sua próxima viagem para São Thomé</h2>
-                    <div class="simulador">
-                        <label for="data">Faça um orçamento Chalé Quaresmeira</label><br>
-                        <img src="Fotos chalé/Chalé Familiar.jpeg" alt="" height="150" width="275"><br>
-                        <input type="date" name="data" id="checkin">
-                        <input type="date" name="data" id="checkout">
-                        <button onclick="calcularDiaria()">Enviar</button>
-                    </div>
-                </div>
-
+            </div>
         </section>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3706.8127792457963!2d-44.9477911255617!3d-21.70999399619634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9fd0f2d067548f%3A0x108008fb91a46a95!2sSitio%20Olho%20D&#39;agua!5e0!3m2!1spt-BR!2sbr!4v1722458686084!5m2!1spt-BR!2sbr"
-            width="120" height="120" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">Localização</iframe>
-
+            width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="Mapa do Sítio Olho D'água">
+        </iframe>
     </div>
 
-
-
-    <footer>Estrada São Thomé - Sobradinho Km 6 São Thomé das Letras- MG </footer>
+    <footer>
+        Estrada São Thomé - Sobradinho Km 6, São Thomé das Letras - MG
+    </footer>
 
     <script src="contatos.js"></script>
-</body>
+
 
 </html>

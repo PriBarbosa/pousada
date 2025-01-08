@@ -15,8 +15,9 @@ body {
 header {
     background-color: rgba(2, 102, 19, 0.938);
     width: 100%;
-    height: 120px;
-    padding: 10px;
+    height: 140px;
+    padding: 30px;
+    position: fixed;
 
 }
 
