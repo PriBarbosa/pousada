@@ -50,7 +50,7 @@
     </header>
     <div class="container">
         <section>
-            <h1 class="titulo">Entre em contato pelos nossos canais de atendimento</h1>
+            <h1 class="titulo"></h1>
             <div class="chale amarelo">
                 <h2>Já marcou a data da sua próxima viagem para São Thomé?</h2>
                 <div class="simulador">
@@ -58,7 +58,8 @@
                     <img src="Fotos chalé/Chalé Ipe Amarelo.jpg" alt="Chalé Ipé Amarelo" height="150" width="275"><br>
                     <input type="date" name="data" id="checkin">
                     <input type="date" name="data" id="checkout">
-                    <button onclick="calcularDiaria()">Calcular</button>
+                    <button onclick="calcularDiaria('chale1',0)">Calcular</button>
+                    <button onclick="calcularDiaria('chale2',5)">Calcular</button>
                     <!-- Elemento para exibir o resultado -->
                     <div id="resultado" style="margin-top: 10px; font-weight: bold; color: blue;"></div>
                 </div>

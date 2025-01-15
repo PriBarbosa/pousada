@@ -1,5 +1,6 @@
 
-function calcularDiaria() {
+function calcularDiaria(chale, nPessoas) {
+    console.log(chale, nPessoas)
     // Obtém os elementos de entrada para check-in e check-out
     var checkin = document.getElementById('checkin');
     var checkout = document.getElementById('checkout');
@@ -34,8 +35,21 @@ function calcularDiaria() {
     if (diffDays >= 2) {
         // Calcula o valor total com base na diária
         var diaria = 190;
+        if (chale == "chale2") {
+            diaria = 420;
+        }
         var resultado = diffDays * diaria;
+        if (chale == 'chale2') {
+            var mimino = 420
+            if (nPessoas > 4) { 
+                var acima = nPessoas - 4
+                var maximo = 90 * acima
+                resultado = diffDays * (mimino + maximo);
 
+
+            }
+
+        }
         // Exibe o resultado na div
         resultadoDiv.textContent = `Total de diárias: ${diffDays}, Valor total: R$ ${resultado.toFixed(2)}`;
         resultadoDiv.style.color = "blue";

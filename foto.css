@@ -2,61 +2,42 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: medium;
-}
 
+}
 
 body {
     background-color: hsla(203, 19%, 87%, 0.897) !important;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    padding-top: 120px;
+    /* Espaço equivalente à altura do cabeçalho */
 
 
+    /* Evite usar "italic" em todo o texto, reserve para destaques */
 }
+
+
 
 header {
     background-color: rgba(2, 102, 19, 0.938);
     width: 100%;
-    height: 140px;
-    padding: 30px;
+    height: 120px;
+    /* Permita que o tamanho seja dinâmico */
+    padding: 10px 20px;
+    /* Margem interna reduzida */
     position: fixed;
-
-}
-
-.contanier {
-    max-width: 1800px;
-    margin: 0;
-    padding: 0;
+    top: 0;
+    z-index: 1000;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: baseline;
+    /* Distribui itens no espaço disponível */
 
-}
-
-
-.logo,
-.socias {
-    width: 25%;
 }
 
 .logo img {
     width: 150px;
+    height: 100px;
     border-radius: 9px;
-
-}
-
-
-.titulo {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-content: center;
-    flex-wrap: nowrap;
-    align-items: center;
-}
-
-.titulo h1 {
-    font-style: oblique;
-    color: mediumblue;
-    text-align: center;
 
 }
 
@@ -75,66 +56,158 @@ header {
     color: #ffffff;
 }
 
-.menu {
-    width: 50%;
+.socias button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.socias button i:hover {
+    color: #ffd700;
+    /* Destaque dourado ao ícone */
+}
+
+h1,
+h2 {
+    color: rgba(2, 102, 19, 0.938);
+}
+
+p {
+    color: #555;
+    /* Um tom mais neutro para o texto */
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu nav a {
+
     color: #ffffff;
     text-decoration: none;
     padding: 40px;
-}
+    margin-right: auto;
 
-.principal {
-    color: yellow;
-    font-size: larger;
-    text-align: center;
-   
 
-}
-
-.principal p {
-    color: green;
-    font-size: larger;
-    text-align: center;
+    /* color: #ffffff;
+    text-decoration: none;
+    margin-right: 20px;
+    /* Espaçamento entre links */
 
 }
 
-.principal h1 {
-    font-size: large;
-    text-align: center;
+.socias {
+    display: flex;
+    gap: 10px;
+    /* Espaçamento entre os botões sociais */
 }
 
-.segundaria p {
-    font-size: larger;
-
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* Espaço entre texto e carrossel */
+    margin: 40px auto;
+    flex-wrap: wrap;
+    /* Para ajustar em telas menores */
+    padding: 20px;
 }
 
-.segundaria h2 {
-    text-align: center;
-    font-size: larger;
-    color: purple;
+.carousel-container .carousel-text {
+    flex: 1;
+    max-width: 500px;
+    /* Limita o tamanho do texto */
+    text-align: justify;
+}
 
+.carousel-container .carousel-text h1 {
+    font-size: 1.8rem;
+    color: rgba(2, 102, 19, 0.938);
+    margin-bottom: 10px;
+}
+
+.carousel-container .carousel-text p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.carousel-container .carousel {
+    flex: 1;
+    max-width: 600px;
+    /* Tamanho máximo do carrossel */
+}
+
+.carousel img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 3px solid rgba(2, 102, 19, 0.938);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+
+    /* Garante proporção correta */
+}
+
+.carousel-inner img {
+    height: 350px;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
 }
 
 footer {
-    border: 2px solid #897589;
-    text-align: center;
-    font-style: italic;
-    color: mediumblue;
-    position: relative;
+    background-color: rgba(2, 102, 19, 0.938);
+    color: white;
+    padding: 15px 0;
+    font-size: 14px;
 
 }
 
-.carousel-item {
-    display: flex;
-    flex-direction: column;
-
+footer a {
+    color: white;
+    text-decoration: underline;
 }
 
-img .classe d-block w-100 {
-    width: 75%;
-    height: 175px;
+footer a:hover {
+    color: #ffd700;
+}
 
 
+@media (max-width: 768px) {
+    .carousel-container {
+        flex-direction: column;
+        /* Empilha o texto e o carrossel */
+    }
+
+    .carousel-container .carousel,
+    .carousel-container .carousel-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .menu nav a {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .socias button {
+        width: 35px;
+        height: 35px;
+    }
 }

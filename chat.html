@@ -4,137 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chalés São Thomé</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
+    <title>Pousada</title>
 
-        body {
-            background-color: hsla(203, 19%, 87%, 0.897) !important;
-        }
-
-        header {
-            background-color: rgba(2, 102, 19, 0.938);
-            width: 100%;
-            height: 120px;
-            padding: 10px;
-            position: fixed;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            z-index: 1000;
-        }
-
-        .logo img {
-            width: 100px;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 140px auto 20px;
-            padding: 20px;
-        }
-
-        .chale {
-            margin-bottom: 30px;
-            background-color: #fff;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .chale img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        iframe {
-            width: 100%;
-            height: 350px;
-            border: none;
-            border-radius: 8px;
-            margin-top: 20px;
-        }
-
-        footer {
-            text-align: center;
-            font-style: italic;
-            color: mediumblue;
-            padding: 10px;
-            background-color: #f5f5f5;
-        }
-
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                height: auto;
-                text-align: center;
-            }
-
-            .logo img {
-                margin-bottom: 10px;
-            }
-
-            nav a {
-                display: inline-block;
-                margin: 5px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-
     <header>
-        <div class="logo">
-            <img src="logo.png" alt="Logo Chalés São Thomé">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Imagens/logo-Sitio-olho-d-agua.jpg" alt="Logo" />
+                </a>
+            </div>
+            <div class="menu">
+                <nav>
+                    <a href="foto.html">Nossas Acomodações</a>
+                    <a href="Contatos.html">Contatos</a>
+                    <a href="reserva.html">Reservas</a>
+                </nav>
+            </div>
+            <div class="socias">
+                <button>
+                    <a href="http://wa.me/+5535998524228" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </button>
+                <button>
+                    <a href="http://www.instagram.com/sitio_olho_daguastl?igsh=MXg1a2pheG82cTNpdw==" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </button>
+                <button>
+                    <a href="mailto:priscilabarbosa1510@gmail.com" target="_blank">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </button>
+            </div>
         </div>
-        <nav>
-            <a href="#chalé1">Chalé Amarelo</a>
-            <a href="#chalé2">Chalé Familiar</a>
-            <a href="#contato">Contato</a>
-        </nav>
     </header>
 
-    <main class="container">
-        <section id="chalé1" class="chale">
-            <h2>Chalé Ipê Amarelo (Casal)</h2>
-            <p>Chalé aconchegante para casal, equipado com utensílios básicos para preparo de refeições simples, roupa
-                de cama completa, TV e Wi-Fi.</p>
-            <img src="Fotos chalé/Chalé Ipe Amarelo.jpg" alt="Chalé Ipê Amarelo">
-        </section>
-
-        <section id="chalé2" class="chale">
-            <h2>Chalé Quaresmeira (Familiar)</h2>
-            <p>Ideal para famílias ou grupos de até 8 pessoas, com quarto de casal e mezanino com acomodações para 6
-                pessoas. Perfeito para momentos inesquecíveis em São Thomé das Letras.</p>
-            <img src="Fotos chalé/Chalé Familiar.jpeg" alt="Chalé Familiar">
-        </section>
-
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3706.8127792457963!2d-44.9477911255617!3d-21.70999399619634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9fd0f2d067548f%3A0x108008fb91a46a95!2sSitio%20Olho%20D'agua!5e0!3m2!1spt-BR!2sbr!4v1722458686084!5m2!1spt-BR!2sbr"
-            allowfullscreen="" loading="lazy"></iframe>
+    <main>
+        <!-- O conteúdo da página vai aqui -->
     </main>
 
     <footer>
-        <p>Estrada São Thomé-Sobradinho Km 6 - São Thomé das Letras, MG - CEP: 37480-000</p>
+        Localização: Estrada São Thomé - Sobradinho, Km 6 São Thomé das Letras, MG - Brasil
     </footer>
-
 </body>
 
 </html>

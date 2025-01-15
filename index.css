@@ -2,7 +2,8 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-style: italic;
+
+
 }
 
 html {
@@ -12,9 +13,13 @@ html {
 
 body {
    background-color: hsla(203, 19%, 87%, 0.897) !important;
+   font-family: 'Poppins', sans-serif;
+   font-style: normal;
+
+
 }
 
-.contanier {
+.container {
    max-width: 1800px;
    margin: 0;
    padding: 0;
@@ -28,9 +33,24 @@ header {
    background-color: rgba(2, 102, 19, 0.938);
    width: 100%;
    height: 120px;
-   padding: 10px;
+   padding: 10px 20px;
    position: fixed;
 }
+
+h1,
+h2 {
+   color: rgba(2, 102, 19, 0.938) !important;
+   font-size: 1.8rem !important;
+
+}
+
+p {
+   font-size: 1rem;
+   color: #333;
+   line-height: 1.5;
+   /* Um tom mais neutro para o texto */
+}
+
 
 .aside {
    padding-top: 120px;
@@ -44,10 +64,7 @@ header {
    width: 500px;
 }
 
-.aside aside h1 {
-   font-variant: normal;
-   color: #0b1b77;
-}
+
 
 .logo,
 .socias {
@@ -64,18 +81,11 @@ header {
 
 .titulo {
    display: flex;
-   flex-direction:column;
+   flex-direction: column;
    justify-content: space-around;
    align-content: center;
    flex-wrap: nowrap;
    align-items: center;
-
-}
-
-.titulo h1 {
-   font-style: oblique;
-   color: mediumblue;
-   text-align: center;
 
 }
 
@@ -89,9 +99,20 @@ header {
    margin-right: 10px;
 }
 
+
 .socias button i {
    font-size: 20px;
    color: #ffffff;
+}
+
+.socias button:hover {
+   transform: scale(1.1);
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.socias button i:hover {
+   color: #ffd700;
+   /* Destaque dourado ao ícone */
 }
 
 .menu {
@@ -104,109 +125,25 @@ header {
    padding: 40px;
 }
 
-.primaria {
-   color: blue;
-   font-style: italic;
-   text-align: center;
-
-
-}
-
-.primaria h1 {
-   color: mediumblue;
-   font-style: italic;
-   text-align: center;
-}
-
 .somos {
 
    display: flex;
    justify-content: space-around;
 }
 
-.somos p {
-   font-style: italic;
-   color: black;
-   text-align: center;
-}
-
-.chales {
-   display: flex;
-   justify-content: space-around;
-   font-style: italic;
-
-}
-
-.chales p {
-   font-style: italic;
-   color: black;
-   text-align: center;
-}
-
-.segundaria h1 {
-   display: flex;
-   justify-content: space-around;
-   color: mediumblue;
-}
-
-.segundaria p {
-   display: flex;
-   justify-content: space-around;
-   font-style: italic;
-   text-align: center;
-   color: black;
-
-
-}
-
-.dicas h1 {
-   display: flex;
-   justify-content: space-around;
-   font-style: italic;
-   text-align: center;
-   color: mediumblue;
-}
-
-
-.dicas p {
-   display: flex;
-   justify-content: space-around;
-   font-style: italic;
-   text-align: center;
-   color: black;
-}
-
-.dicas {
-
-   display: flex;
-   justify-content: space-evenly;
-   flex-wrap: wrap;
-   text-align: center;
-   align-content: flex-start;
-   align-items: flex-start;
-   flex-direction: row-reverse;
-}
-
-img {
-   width: 120px;
-   height: 120px;
-}
-
 footer {
-
-   text-align: center;
-   font-style: italic;
-   color: mediumblue;
-   position: relative;
-
+   background-color: rgba(2, 102, 19, 0.938);
+   color: white;
+   padding: 15px 0;
+   font-size: 14px;
 
 }
 
+footer a {
+   color: white;
+   text-decoration: underline;
+}
 
-@media (max-width: 600px) {
-   body {
-      background-color: red !important;
-      margin: 10px !important;
-   }
-
+footer a:hover {
+   color: #ffd700;
 }

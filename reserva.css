@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: medium;
+
 }
 
 
@@ -43,12 +43,7 @@ header {
     align-items: center;
 }
 
-.titulo h1 {
-    font-style: oblique;
-    color: mediumblue;
-    text-align: center;
 
-}
 
 .socias button {
     width: 45px;
@@ -63,6 +58,16 @@ header {
 .socias button i {
     font-size: 20px;
     color: #ffffff;
+}
+
+.socias button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.socias button i:hover {
+    color: #ffd700;
+    /* Destaque dourado ao ícone */
 }
 
 .menu {
@@ -91,22 +96,89 @@ header {
 .card {
     width: 33%;
 }
+.card {
+    width: 18rem;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-.inicio p {
-    text-align: end;
-    font-style: oblique;
-    color: black;
+.card img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: rgba(2, 102, 19, 0.938);
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: rgba(2, 102, 19, 0.938);
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
     text-align: center;
 }
 
+.btn-primary:hover {
+    background-color: #ffd700;
+    color: #333;
+}
+
+
 body {
 
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    background-color:hsla(203, 19%, 87%, 0.897) !important;
+    background-color: hsla(203, 19%, 87%, 0.897) !important;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    color: rgba(2, 102, 19, 0.938) !important;
+    /* Espaço equivalente à altura do cabeçalho */
+
+
+    /* Evite usar "italic" em todo o texto, reserve para destaques */
 
 }
+
+p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: rgba(2, 102, 19, 0.938);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* 
+footer {
+    background-color: rgba(2, 102, 19, 0.938);
+    color: white;
+    padding: 15px 0;
+    font-size: 14px;
+    text-align: center;
+
+} */
 
 @media (max-width: 600px) {
     body {
