@@ -19,12 +19,12 @@ body {
 
 }
 
-.container {
+.contanier {
    max-width: 1800px;
    margin: 0;
    padding: 0;
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
    align-items: center;
 
 }
@@ -35,10 +35,13 @@ header {
    height: 120px;
    padding: 10px 20px;
    position: fixed;
+   top: 0;
+   z-index: 1000;
 }
 
 h1,
-h2 {
+h2,
+h3 {
    color: rgba(2, 102, 19, 0.938) !important;
    font-size: 1.8rem !important;
 
@@ -131,19 +134,39 @@ p {
    justify-content: space-around;
 }
 
+img {
+   border-radius: 8px;
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+   border: 1px solid rgba(2, 102, 19, 0.938);
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+}
+
+iframe {
+   width: 350px;
+   height: 350px;
+   text-align: center;
+   border: 2px solid #ccc;
+   border-radius: 8px;
+   margin-top: 10px;
+}
+
 footer {
    background-color: rgba(2, 102, 19, 0.938);
    color: white;
-   padding: 15px 0;
+   padding: 15px;
    font-size: 14px;
+   text-align: center;
 
 }
 
-footer a {
+footer p {
    color: white;
-   text-decoration: underline;
+   text-decoration: none;
 }
 
-footer a:hover {
+footer p:hover {
    color: #ffd700;
 }

@@ -9,7 +9,8 @@ body {
     background-color: hsla(203, 19%, 87%, 0.897) !important;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    padding-top: 120px;
+    padding-top: 130px;
+    height: 120px;
     /* Espaço equivalente à altura do cabeçalho */
 
 
@@ -22,15 +23,12 @@ header {
     background-color: rgba(2, 102, 19, 0.938);
     width: 100%;
     height: 120px;
-    /* Permita que o tamanho seja dinâmico */
     padding: 10px 20px;
-    /* Margem interna reduzida */
     position: fixed;
     top: 0;
     z-index: 1000;
-    display: flex;
-    justify-content: baseline;
-    /* Distribui itens no espaço disponível */
+
+
 
 }
 
@@ -77,26 +75,36 @@ p {
 }
 
 
-.container {
+.contanier {
+    max-width: 1800px;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
 }
 
-.menu nav a {
+/* .menu nav a {
 
     color: #ffffff;
     text-decoration: none;
     padding: 40px;
-    margin-right: auto;
+    margin-right: auto; */
 
+.menu nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0;
+    font-size: 16px;
+}
 
-    /* color: #ffffff;
+/* color: #ffffff;
     text-decoration: none;
     margin-right: 20px;
     /* Espaçamento entre links */
 
-}
+
 
 .socias {
     display: flex;
@@ -113,7 +121,7 @@ p {
     margin: 40px auto;
     flex-wrap: wrap;
     /* Para ajustar em telas menores */
-    padding: 20px;
+    padding: 0 10px;
 }
 
 .carousel-container .carousel-text {
@@ -167,17 +175,18 @@ p {
 footer {
     background-color: rgba(2, 102, 19, 0.938);
     color: white;
-    padding: 15px 0;
+    padding: 15px;
     font-size: 14px;
+    text-align: center;
 
 }
 
-footer a {
+footer p {
     color: white;
-    text-decoration: underline;
+    text-decoration:none;
 }
 
-footer a:hover {
+footer p:hover {
     color: #ffd700;
 }
 
@@ -209,5 +218,11 @@ footer a:hover {
     .socias button {
         width: 35px;
         height: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel img {
+        height: auto;
     }
 }

@@ -11,7 +11,7 @@
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
 
 }
@@ -19,16 +19,21 @@
 header {
     background-color: rgba(2, 102, 19, 0.938);
     width: 100%;
-    padding: 10px;
+    height: 120;
+    padding: 10px 20px;
+    position: relative;
+    top: 0;
+    z-index: 1000;
+    
 }
 
-.logo,
-.socias {
+.logo {
     width: 25%;
 }
 
 .logo img {
     width: 150px;
+    height: 100px;
     border-radius: 9px;
 
 }
@@ -44,6 +49,11 @@ header {
 }
 
 
+.socias {
+    display: flex;
+    gap: 10px;
+    /* Espaçamento entre os botões sociais */
+}
 
 .socias button {
     width: 45px;
@@ -96,6 +106,7 @@ header {
 .card {
     width: 33%;
 }
+
 .card {
     width: 18rem;
     margin: 20px auto;
@@ -165,20 +176,21 @@ p {
 footer {
     background-color: rgba(2, 102, 19, 0.938);
     color: white;
-    text-align: center;
     padding: 15px;
-    margin-top: 20px;
-}
-
-/* 
-footer {
-    background-color: rgba(2, 102, 19, 0.938);
-    color: white;
-    padding: 15px 0;
     font-size: 14px;
     text-align: center;
 
-} */
+}
+
+footer p {
+    color: white;
+    text-decoration:none;
+}
+
+footer p:hover {
+    color: #ffd700;
+}
+
 
 @media (max-width: 600px) {
     body {

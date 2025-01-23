@@ -9,15 +9,19 @@
 /* Estilo para o corpo */
 body {
     background-color: hsla(203, 19%, 87%, 0.897) !important;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
 }
 
 /* Cabeçalho */
 header {
     background-color: rgba(2, 102, 19, 0.938);
     width: 100%;
-    height: 120px;
+    height: 120px !important;
     padding: 20px;
     position: fixed;
+    top: 0;
+    z-index: 1000;
 
 }
 
@@ -30,9 +34,10 @@ div form .action {
 /* Container principal */
 .contanier {
     max-width: 1800px;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -87,13 +92,161 @@ div form .action {
 /* Seções principais */
 section {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction:column;
     align-items: flex-start;
     padding: 130px;
     align-content: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+.chalets-section {
+    background-color: #ffffff;
+    /* Cor de fundo personalizada */
+}
+
+.chalets-section .titulo {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.chalets-section .simulador {
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    /* Para alinhar texto e imagens em coluna */
+    align-items: center;
+    /* Centraliza itens horizontalmente */
+    text-align: center;
+    /* Centraliza o texto */
+    gap: 15px;
+    /* Espaço entre elementos */
+}
+
+.chalets-section .simulador img {
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 8px;
+    max-width: 100%;
+    /* Garante que as imagens não ultrapassem o contêiner */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.chalets-section .simulador button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chalets-section .simulador button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para a seção de rotas */
+.directions-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.directions-section h3 {
+    font-size: 1.5em;
+    color: #444;
+}
+
+.directions-section ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.directions-section ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.directions-section iframe {
+    border-radius: 8px;
+}
+
+/* Adaptação para telas menores */
+@media (max-width: 768px) {
+    .directions-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .directions-section iframe {
+        width: 100%;
+    }
+}
+
+p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+    /* Um tom mais neutro para o texto */
+}
+
+h1,
+h2,
+h3 {
+    color: rgba(2, 102, 19, 0.938) !important;
+    font-size: 1.8rem !important;
+
+}
+
+.titulo {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.simuladores {
+    display: flex;
+    /* Torna o contêiner flexível */
+    flex-wrap: wrap;
+    /* Permite quebra de linha se necessário */
+    gap: 20px;
+    /* Espaçamento entre os simuladores */
+    justify-content: space-between;
+    /* Distribui uniformemente */
+}
+
+.simuladores .simulador {
+    flex: 1 1 calc(50% - 20px);
+    /* Cada simulador ocupa 50% da largura menos o gap */
+    max-width: calc(50% - 20px);
+    /* Limita a largura máxima a 50% menos o gap */
+    box-sizing: border-box;
+    /* Inclui padding e borda no tamanho */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+.chale img {
+    border-radius: 8px;
+}
+
+.resultado {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #444;
+}
+
 
 /* Estilo para o iframe */
 iframe {
@@ -110,18 +263,18 @@ iframe {
 footer {
     background-color: rgba(2, 102, 19, 0.938);
     color: white;
-    padding: 15px 0;
+    padding: 15px;
     font-size: 14px;
     text-align: center;
 
 }
 
-footer a {
+footer p {
     color: white;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
-footer a:hover {
+footer p:hover {
     color: #ffd700;
 }
 
