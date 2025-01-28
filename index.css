@@ -19,7 +19,7 @@ body {
 
 }
 
-.contanier {
+.container {
    max-width: 1800px;
    margin: 0;
    padding: 0;
@@ -75,9 +75,9 @@ p {
 }
 
 .logo img {
-   width: 150px;
-   height: 100px;
+   width: 140px;
    border-radius: 9px;
+   height: 100%;
 
 }
 
@@ -169,4 +169,8 @@ footer p {
 
 footer p:hover {
    color: #ffd700;
+}
+a:focus {
+   outline: 2px dashed #ffd700;
+   outline-offset: 4px;
 }

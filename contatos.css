@@ -32,7 +32,7 @@ div form .action {
 }
 
 /* Container principal */
-.contanier {
+.container {
     max-width: 1800px;
     margin: 0;
     padding: 0;
@@ -50,6 +50,7 @@ div form .action {
 .logo img {
     width: 150px;
     border-radius: 9px;
+    
 }
 
 /* Botões de redes sociais */
@@ -92,7 +93,7 @@ div form .action {
 /* Seções principais */
 section {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: flex-start;
     padding: 130px;
     align-content: center;

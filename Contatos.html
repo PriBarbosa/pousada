@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contatos</title>
+    <title>Sitio Olho D'Água</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,7 +16,7 @@
 <body>
     <header>
         <div>
-            <div class="contanier">
+            <div class="container">
                 <a class="logo" href="index.html">
                     <img src="Imagens/logo-Sitio-olho-d-agua.jpg" width="110" height="95">
                 </a>
@@ -123,6 +123,20 @@
                         para ajudar!</p>
                 </div>
             </div>
+            <div id="map" style="height: 300px;"></div>
+            <script>
+                function initMap() {
+                    const sitio = { lat: -21.7225, lng: -45.0045 }; // Coordenadas fictícias
+                    const map = new google.maps.Map(document.getElementById("map"), {
+                        zoom: 15,
+                        center: sitio,
+                    });
+                    new google.maps.Marker({ position: sitio, map: map });
+                }
+            </script>
+            <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+
         </section>
 
     </main>
